@@ -16,15 +16,6 @@
 - Consists of series of elements
 - Tells the browser how to display the content
 
-## What is a HTML element?
-- Defined by a start tag, content and an end tag
-```html
-<tag>content</tag>
-```
-- Some HTML elements have no content
-- They are known as empty elements
-- Empty elements have no end tags
-
 # [Basic Examples](https://www.w3schools.com/html/html_basic.asp)
 
 ## HTML documents
@@ -57,3 +48,21 @@
 - Source file is in the `src` attribute
 - Alternative text is in the `alt` attribute
 - `width` and `height` are also attributes
+
+# [Elements](https://www.w3schools.com/html/html_elements.asp)
+## What is a HTML element?
+- Everything from a start tag, content and an end tag
+```html
+<tag>content</tag>
+```
+- Can be nested (Elements can contain other elements)
+- All HTML documents consist of nested HTML elements
+- Some HTML documents will display correctly, even if the end tag is missing (**Never rely on this; Unexpected results and errors may occur if you leave out the end tag**)
+- Some HTML elements have no content
+- They are known as empty elements
+- Empty elements have no end tags
+- For example, the `<br>` tag defines a line break
+- HTML tags are not case sensitive
+- `<P>` is the same as `<p>`
+- The HTML standard does not require lowercase tags
+- World Wide Web Consortium **recommends** lowercase in HTML, and **demands** lowercase for stricter document types like XHTML
