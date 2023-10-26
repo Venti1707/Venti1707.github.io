@@ -50,6 +50,7 @@
 - `width` and `height` are also attributes
 
 # [Elements](https://www.w3schools.com/html/html_elements.asp)
+
 ## What is a HTML element?
 - Everything from a start tag, content and an end tag
 ```html
@@ -65,4 +66,114 @@
 - HTML tags are not case sensitive
 - `<P>` is the same as `<p>`
 - The HTML standard does not require lowercase tags
-- World Wide Web Consortium **recommends** lowercase in HTML, and **demands** lowercase for stricter document types like XHTML
+- World Wide Web Consortium **recommends** lowercase in HTML and **demands** lowercase for stricter document types like XHTML
+- For a list of HTML tags, visit this [page](https://www.w3schools.com/tags/default.asp)
+
+# [Attributes](https://www.w3schools.com/html/html_attributes.asp)
+
+## The `href` attribute
+- The `<a>` tag defines a hyperlink
+- The `href` attribute specifies the URL of the page to link to
+
+## The `src` attribute
+- The `<img>` tag is used to embed an image in a HTML page
+- The `src` attribute specifies the path to the image to be displayed
+- Can be specified in 2 ways
+  - **Absolute URL**
+    - Links to an external image that is hosted on another website
+      - Example: https://raw.githubusercontent.com/Venti1707/Genshin-TCG-Assets/main/My-Cards/img/Character%20Cards/Venti.png
+    - External images might be under copyright.
+      - If you do not get permission to use it, you may be in violation of copyright laws.
+    - Cannot control external images
+      - It can suddenly be removed or changed.
+  - **Relative URL**
+    - Links to an image hosted within the website
+    - URL does not include domain name
+    - If the URL does not begin with a slash, it will be relative to the current page
+      - `src="Venti.png"`
+    - If the URL does begin with a slash, it will be relative to the domain
+      - `src="/img/Character%20Cards/Venti.png"`
+- It is better to use Relative URLs as they will not break if your domain changes
+
+## The `width` and `height` attributes
+- The `<img>` tag should also contain these
+- They specify the width and height of the image in pixels
+
+## The `alt` attribute
+- Used in the `<img>`
+- Specifies an alternate text for an image if the image cannot be displayed
+- Reasons for the image being unable to be displayed include:
+  - Slow connections
+  - An error in the `src` attribute
+  - If the user is using a screen reader
+
+## The `style` attribute
+- Used to add styles to an element
+- Some styles include
+  - Color
+  - Font
+  - Size
+
+## The `lang` attribute
+- Should be included in the `<html>` tag
+- This specifies English as the language
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+      ...
+  </body>
+</html>
+```
+- Used to declare the language of the webpage
+- Meant to assist
+  - Search engines
+  - Browsers
+- Country codes can also be added
+  - First 2 characters define the language
+  - Last 2 characters define the country
+- This specifies English as the language and United States as the country
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <body>
+   ...
+  </body>
+</html>
+```
+- All language codes can be viewed [here](https://www.w3schools.com/tags/ref_language_codes.asp)
+
+## The `title` attribute
+- Defines extra information about an element
+- Value will be displayed as a tooltip when the mouse is over the element
+
+## Attribute Names
+- HTML standard does not require lowercase attribute names
+- All attributes can be written in lowercase or uppercase
+- World Wide Web Consortium **recommends** lowercase in HTML and **demands** lowercase for stricter document types like XHTML
+
+## Attribute Values
+- HTML standard does not require quotes around attribute values
+- World Wide Web Consortium **recommends** quotes in HTML and **demands** quotes for stricter document types like XHTML
+
+- Good:
+```html
+<a href="introduction.html">Visit the introduction page!</a>
+```
+- Bad:
+```html
+<a href=introduction.html>Visit the introduction page!</a>
+```
+- Quotes have to be used when the attribute value contains a space
+```html
+<p title=About Me>
+```
+
+## Single or Double Quotes?
+- Double quotes around attribute values are the most common
+- Single quotes can also be used
+- If the attribute value contains double quotes, then it is necessary to use single quotes and vice versa
+```html
+<p title="I am a title with 'single quotes'">
+<p title='I am a title with "double quotes"'>
+```
