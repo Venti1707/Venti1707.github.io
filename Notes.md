@@ -177,3 +177,7 @@
 <p title="I am a title with 'single quotes'">
 <p title='I am a title with "double quotes"'>
 ```
+
+# Headings
+- Each heading has a default size
+- You can specify the size for any heading with the style attribute, using the CSS `font-size` property
