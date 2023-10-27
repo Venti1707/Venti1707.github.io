@@ -416,3 +416,28 @@ Example:
 ```html
 <bdo dir="rtl">This text will be written from right to left</bdo>
 ```
+
+# Comments
+- Not displayed in the browser
+- Can help document the source code
+Example:
+```html
+<!-- This is a comment -->
+```
+- There is an exclamation mark in the start tag, but not the end tag
+- Can help to hide content
+Example:
+```html
+<p>This is a paragraph.</p>
+
+<!-- <p>This is a paragraph that has been commented out</p>
+
+<p>This is another paragraph that has been commented out </p> -->
+
+<p>This is also a paragraph</p>
+```
+- Parts in the middle of the HTML code can be hidden as well
+Example:
+```html
+<p>This <!-- comment --> is in a paragraph.</p>
+```
