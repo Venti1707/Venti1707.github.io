@@ -110,7 +110,7 @@
 ## The `style` attribute
 - Used to add styles to an element
 - Some styles include
-  - Color
+  - Colour
   - Font
   - Size
 
@@ -210,3 +210,55 @@
 - Preserves
   - Spaces
   - Line breaks 
+
+# [Styles](https://www.w3schools.com/html/html_styles.asp)
+
+## The `style` attribute
+- Used to add styles to an element
+- Includes things like
+  - Colour
+  - Font
+  - Size
+  - And more
+- Has the following syntax
+```html
+<tagname style="property: value;">
+```
+- `property` is a CSS property
+- `value` is a CSS value
+
+## Background Colour
+- The CSS `background-color` property defines the background colour for a HTML element
+- Example:
+```html
+<h1 style="background-color: #42BC9C;">This is a heading with the background-color style and it has a value of #42BC9C</h1>
+```
+
+
+## Text Colour
+- The CSS `color` property defines the text colour for a HTML element
+- Example:
+```html
+<h1 style="color: #7042DB;">This is a heading with the color style and it has a value of #7042DB</h1>
+```
+
+## Font Family
+- The CSS `font-family` property defines the font to be used for a HTML element
+- Example:
+```html
+<h1 style="font-family: verdana;">This is a heading with the font-family style and it has a value of verdana</h1>
+```
+
+## Text Size
+- The CSS `font-size` property defines the text size for a HTML element
+- Example:
+```html
+<h1 style="font-size: 300%;">This is a heading with the font-size style and it has a value of 300%</h1>
+```
+
+## Text Alignment
+- The CSS `text-align` property defines the **horizontal** text alignment
+- Example:
+```html
+<h1 style="text-align: center;">This is a heading with the text-align style and it has a value of center</h1>
+```
