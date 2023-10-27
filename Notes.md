@@ -234,7 +234,6 @@
 <h1 style="background-color: #42BC9C;">This is a heading with the background-color style and it has a value of #42BC9C</h1>
 ```
 
-
 ## Text Colour
 - The CSS `color` property defines the text colour for a HTML element
 - Example:
@@ -261,4 +260,100 @@
 - Example:
 ```html
 <h1 style="text-align: center;">This is a heading with the text-align style and it has a value of center</h1>
+```
+
+# Text Formatting
+
+## Formatting Elements
+- Designed to display special types of text
+- `<b>` - Bold text
+- `<strong>` - Important text
+- `<i>` - Italic text
+- `<em>` - Emphasized text
+- `<mark>` - Marked text
+- `<small>` - Smaller text
+- `<del>` - Deleted text
+- `<ins>` - Inserted text
+- `<sub>` - Subscript text
+- `<sup>` - Superscript text
+
+## `<b>`
+- Defines bold text, without any extra importance
+- Example:
+```html
+<b>This text is bold</b>
+```
+## `<strong>`
+- Defines text with strong importance
+- Content inside is typically displayed in bold
+- Example:
+```html
+<strong>This text is important</strong>
+```
+
+## `<i>`
+- Defines part of a text in an alternate voice or mood
+- Content inside is typically displayed in italic
+- Used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+- Example:
+```html
+<i>This text is italic</i>
+```
+
+## `<em>`
+- Content inside is typically displayed in italic
+- Screen readers will pronounce words in `<em>` with an emphasis, using verbal stress
+- Example:
+```html
+<em>This text is emphasized</em>
+```
+
+## `<small>`
+- Defines smaller text
+- Example:
+```html
+<small>This is some smaller text.</small>
+```
+
+## `<mark>`
+- Defines text that should be marked/highlighted
+- Example:
+```html
+<mark>This is some marked text.</mark>
+```
+
+## `<del>`
+- Defines text that has been been deleted from a document
+- Browsers usually strike a line through deleted text
+- Example:
+```html
+<del>This is some deleted text.</del>
+```
+
+## `<ins>`
+- Defines text that has been been inserted from a document
+- Browsers usually underline inserted text
+- Example:
+```html
+<ins>This is some inserted text.</ins>
+```
+
+## `<sub>`
+- Defines subscript text
+- Appears half a character below the normal line
+- Sometimes rendered in a smaller font
+- Can be used for chemical formulas, like C₁₂H₂₂O₁₁
+- Example:
+```html
+<sub>This is some subscript text.</sub>
+```
+
+## `<sup>`
+- Defines superscript text
+- Appears half a character above the normal line
+- Sometimes rendered in a smaller font
+- Can be used for footnotes, like <sup>[1]</sup>
+- Example:
+```html
+<sup>This is some superscript text.</sup>
 ```
