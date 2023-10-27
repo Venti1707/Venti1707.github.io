@@ -357,3 +357,62 @@
 ```html
 <sup>This is some superscript text.</sup>
 ```
+
+# [Quotation and Citation](https://www.w3schools.com/html/html_quotation_elements.asp)
+
+## `<blockquote>`
+- Defines a section that is quoted from another source
+- Browsers usually indent `<blockquote>` elements
+- Example:
+```html
+<blockquote cite="https://www.youtube.com/watch?v=TmaAOV4SJNQ">Rosalyne died in a foreign land... But you heartless businessmen and dignitaries, always with a convenient excuse to remain in the comfort of your homeland... You couldn't hope to understand. So why don't you keep your mouths shut! We don't want to make the children cry...</blockquote>
+```
+
+## `<q>`
+- Defines a short quotation
+- Browsers normally insert quotation marks around the quotation.
+- Example: 
+```html
+<q>Rosalyne died in a foreign land... But you heartless businessmen and dignitaries, always with a convenient excuse to remain in the comfort of your homeland... You couldn't hope to understand. So why don't you keep your mouths shut! We don't want to make the children cry...</q>
+```
+
+## `<abbr>`
+- Defines an abbreviation or an acronym
+- Can give useful information to
+  - Browsers
+  - Translation systems
+  - Search engines
+- Using the `title` attribute so the description of the abbreviation or acronym when mousing over the element is good practice
+- Example:
+```html
+<abbr title="House of the Hearth">HotH</abbr>
+```
+
+## `<address>`
+- Defines contact information for the author/owner of an article
+- Can be
+  - Email address
+  - URL
+  - Physical address
+  - Phone number
+  - Social media handle
+  - And more
+- Text in the `<address>` element usually renders in italic
+- Browsers will always add a line break before and after the `<address>` element
+
+## `<cite>`
+- Defines the title of a creative work
+- A person's name is not the title of the work
+- Text in the `<cite>` element usually renders in *italic*
+- Example:
+```html
+<cite>Trofin Snezhevich</cite>, Tattered Paper
+```
+
+## `<bdo>`
+- BDO stands for Bi-Directional Override
+- The `<bdo>` is used to override the current text direction
+Example:
+```html
+<bdo dir="rtl">This text will be written from right to left</bdo>
+```
