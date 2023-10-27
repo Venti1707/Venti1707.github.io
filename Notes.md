@@ -5,7 +5,7 @@
 - `<html>` is the root element of a HTML page
 - `<head>` contains meta information of a HTML page
 - `<title>` specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
-- `<body>`  defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+- `<body>` defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
 - `<h1>` defines a large heading
 - `<p>` defines a paragraph
 
@@ -121,7 +121,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <body>
-      ...
+    ...
   </body>
 </html>
 ```
@@ -417,7 +417,7 @@ Example:
 <bdo dir="rtl">This text will be written from right to left</bdo>
 ```
 
-# Comments
+# [Comments](https://www.w3schools.com/html/html_comments.asp)
 - Not displayed in the browser
 - Can help document the source code
 Example:
@@ -440,4 +440,112 @@ Example:
 Example:
 ```html
 <p>This <!-- comment --> is in a paragraph.</p>
+```
+
+# [Colours](https://www.w3schools.com/html/html_colors.asp)
+
+## Colour Names
+- Colour can be specified using colour names
+- There are 140 standard colour names
+- Complete list can be seen [here](https://www.w3schools.com/colors/colors_names.asp)
+
+## Background Colour
+- Can be set using the CSS property `background-color`
+Example:
+```html
+<p style="background-color: #42BC9C">This is a paragraph</p>
+```
+
+## Text Colour
+- Can be set using the CSS property `color`
+- Example:
+```html
+<p style="color: #42BC9C;">This is a paragraph</p>
+```
+
+## Border Colour
+- Can be set using the CSS property `border`
+- Example:
+```html
+<p style="border: 2px solid #42BC9C;">This is a paragraph</p>
+```
+
+## Colour Values
+- Colours can be specified in the following ways
+  - RGB
+  - HEX
+  - HSL
+  - RGBA
+  - HSLA
+- The A in RGBA and HSLA stands for Alpha, which controls the opacity
+- For example, the colour #42BC9C is
+  - rgb(66, 188, 156)
+  - #42BC9C
+  - hsl(164, 48%, 50%)
+  - rgba(66, 188, 156, 1)
+  - hsla(164.26, 48.03%, 49.8%, 1)
+
+### [RGB](https://www.w3schools.com/html/html_colors_rgb.asp)
+- RGB represents the **R**ed, **G**reen and **B**lue light sources
+- RGBA is an extension of RGB
+- In HTML, colour can be specified as a RGB value in this form
+```
+rgb(red, green, blue)
+```
+- Each parameter (red, green and blue) defines the intensity of the colour of the value between 0 and 255
+- To display black, all parameters are set to 0
+- To display white, all parameters are set to 255
+- Shades of grey are often defined using equal values for all 3 parameters
+
+### RGBA Colour Values
+- In HTML, colour can be specified as a RGBA value in this form
+```
+rgba(red, green, blue, alpha)
+```
+- The alpha parameter is a number between 0.0 (Fully transparent) and 1.0 (Fully opaque)
+
+### [HEX](https://www.w3schools.com/html/html_colors_hex.asp)
+- In HTML, colour can be specified as a **HEX**adecimal colour in this form
+```
+#RRGGBB
+```
+- RR is the hexadecimal integer of the red component of the colour
+- GG is the hexadecimal integer of the green component of the colour
+- BB is the hexadecimal integer of the blue component of the colour
+- Hexadecimal integers can take in values from 00 to FF (Same as decimal 0 to 255)
+- To display black, all parameters are set to 00
+- To display white, all parameters are set to FF
+- Shades of grey are often defined using equal values for all 3 parameters
+
+### [HSL](https://www.w3schools.com/html/html_colors_hsl.asp)
+- HSL represents the **H**ue, **S**aturation and **L**ightness
+- HSLA is an extension of HSL
+- In HTML, colour can be specified as a HSL value in this form
+```
+hsl(hue, saturation, lightness)
+```
+- Hue is a degree on the colour wheel from 0 to 360
+  - 0 is red
+  - 120 is green
+  - 240 is blue
+- Saturation is a percentage value
+  - 0% means a shade of grey
+  - 100% is the full colour
+- Saturation can also be used to describe the intensity of a colour
+  - 100% is the pure colour and there are no shades of grey
+  - 50% is 50% gray but you can still see the colour
+  - 0% is completely gray and you can no longer see the colour
+- Lightness is also a percentage value
+  - 0% is black
+  - 100% is white
+- Lightness can also be used to describe how much light you want to give the colour
+  - 0% means no light (Black)
+  - 50% means light (Neither dark nor light)
+  - 100% meens full lightness (White)
+- Shades of gray are often defined by setting the Hue and Saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades
+
+### HSLA
+- In HTML, colour can be specified as a HSLA value in this form
+```
+hsla(hue, saturation, lightness, alpha)
 ```
