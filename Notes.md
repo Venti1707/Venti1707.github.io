@@ -178,6 +178,35 @@
 <p title='I am a title with "double quotes"'>
 ```
 
-# Headings
+# [Headings](https://www.w3schools.com/html/html_headings.asp)
 - Each heading has a default size
 - You can specify the size for any heading with the style attribute, using the CSS `font-size` property
+- Browsers automatically add some white space (also known as a margin) before and after a heading
+
+# [Paragraphs](https://www.w3schools.com/html/html_paragraphs.asp)
+- Always starts on a new line
+- Browsers automatically add a margin before and after a paragraph
+
+## Display
+- You cannot be sure how HTML will be displayed
+- Large, small screens and resized windows will produce different results
+- With HTML, you cannot change the display by adding extra spaces or extra lines in the source code
+- The browser will automatically remove any extra spaces and lines when the page is displayed
+
+## Horizontal Rules
+- Produced with the `<hr>` tag
+- Defines a thematic break
+- Is used to separate content (or define a change) in a HTML page
+- Is an empty tag
+
+## Line Breaks
+- Produced with the `<br>` tag
+- Defines a line break
+- Used if a line break is needed without a new paragraph being started
+
+## The `<pre>` Element
+- Defines preformatted text
+- Text inside is displayed in a fixed-width font (usually Corrier)
+- Preserves
+  - Spaces
+  - Line breaks 
