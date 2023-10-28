@@ -549,3 +549,44 @@ hsl(hue, saturation, lightness)
 ```
 hsla(hue, saturation, lightness, alpha)
 ```
+
+# [CSS](https://www.w3schools.com/html/html_css.asp)
+- Stands for **C**ascading **S**tyle **S**heets
+- Used to format the layout of a webpage
+- It is cascading as a style applied to a parent element will apply to all children elements within the parent
+
+## Using CSS
+- Can be added in 3 ways
+  - Inline
+    - Using the `style` attribute inside HTML elements
+  - Internal
+    - Using a `<style>` element in the `<head>` section
+  - External
+    - Using a `<link>` element to link an external CSS file
+    - Most common way
+
+### Inline CSS
+- Used to apply a unique style to a single HTML element
+
+### Internal CSS
+- Used to define a style for a single HTML page
+
+### External CSS
+- Used to define a style for many HTML pages
+- The external file must not contain any HTML code
+- It must also end with .css
+- Can be referenced with a full URL or with a path relative to the current web page
+  - Full URL
+    - `https://Venti1707.GitHub.io/external-css.css`
+  - Located in an external folder
+    - `/css/external-css.css`
+  - Located in the same folder
+    - `external-css.css`
+
+### Commonly Used CSS Properties
+- `color` defines the text colour to be used
+- `font-family` defines the font to be used
+- `font-size` defines the text size to be used
+- `border` defines a border around the HTML element
+- `padding` defines a padding (space) between the text and the border
+- `margin` defines a margin (space) outside the border
