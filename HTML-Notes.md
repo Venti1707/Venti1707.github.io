@@ -590,3 +590,62 @@ hsla(hue, saturation, lightness, alpha)
 - `border` defines a border around the HTML element
 - `padding` defines a padding (space) between the text and the border
 - `margin` defines a margin (space) outside the border
+
+# [Links](https://www.w3schools.com/html/html_links.asp)
+- `<a>` tag defines a hyperlink
+- Has the following syntax
+```html
+<a href="url">Text</a>
+```
+- By default, links will appear as follows in all browsers
+  - Unvisited links are underlined and blue
+  - Visited links are underlined and purple
+  - Active links are underlined and red
+- You can style links with CSS
+
+## The `target` Attribute
+- Specifies where to open the linked document
+- Can have one of the following values
+  - `_self`
+    - Is the default value
+    - Opens in the same window/tab it was clicked
+  - `_blank`
+    - Opens in a new window/tab
+  - `_parent`
+    - Opens in the parent frame
+  - `_top`
+    - Opens in the full body of the window
+
+## Absolute URLs vs Relative URLs
+- Absolute URLs are full web addresses
+- Relative URLs are local links (They link to a page within the same website, and usually do not include the https://www part)
+
+## Using Images As Links
+- Put the `<img>` tag inside the `<a>` tag
+
+## Using Links To Send Emails
+- Use `mailto:` inside the `href` attribute to open the user's email program for them to send an email
+
+## The `title` Attribute
+-  Specifies extra information about an element
+-  Most often shown as a tooltip text when the mouse hovers over said element
+
+## Link Colours
+- Can be styled using CSS
+
+## Link Bookmarks
+- Used so readers can jump to specific parts of a web page
+- Can be useful if the web page is very long
+- To create a bookmark, perform the following steps:
+  - Use the `id` attribute to create a bookmark
+    ```html
+    <p id="example">Example</p>
+    ```
+  - Then add a link to the bookmark from within the same page
+    ```html
+    <a href="#example">Jump to Example</a>
+    ```
+- You can also add a link to a bookmark on another page
+  ```html
+  <a href="another-webpage.html#example">Jump to Example on another page</a>
+  ```
