@@ -1,0 +1,23 @@
+a:link {
+    color: black; /* Links are now now black by default */
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #429675; /* Visited links are now #429675 by default */
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7042DB; /* Hovered links are now #7042DB by default */
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #BA4C5A; /* Active links are now #BA4C5A by default */
+    background-color: transparent;
+    text-decoration: underline;
+}
