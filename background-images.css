@@ -1,0 +1,22 @@
+#repeating {
+    background-image: url('https://raw.githubusercontent.com/Venti1707/Genshin-TCG-Assets/main/My-Cards/img/Character%20Cards/Venti.png');
+}
+
+#non-repeating {
+    background-image: url('https://raw.githubusercontent.com/Venti1707/Genshin-TCG-Assets/main/My-Cards/img/Character%20Cards/Venti.png');
+    background-repeat: no-repeat;
+}
+
+#covering {
+    background-image: url('https://raw.githubusercontent.com/Venti1707/Genshin-TCG-Assets/main/My-Cards/img/Character%20Cards/Venti.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#stretching {
+    background-image: url('https://raw.githubusercontent.com/Venti1707/Genshin-TCG-Assets/main/My-Cards/img/Character%20Cards/Venti.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
