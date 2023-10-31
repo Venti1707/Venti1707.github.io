@@ -412,7 +412,7 @@
 ## `<bdo>`
 - BDO stands for Bi-Directional Override
 - The `<bdo>` is used to override the current text direction
-Example:
+- Example:
 ```html
 <bdo dir="rtl">This text will be written from right to left</bdo>
 ```
@@ -420,13 +420,13 @@ Example:
 # [Comments](https://www.w3schools.com/html/html_comments.asp)
 - Not displayed in the browser
 - Can help document the source code
-Example:
+- Example:
 ```html
 <!-- This is a comment -->
 ```
 - There is an exclamation mark in the start tag, but not the end tag
 - Can help to hide content
-Example:
+- Example:
 ```html
 <p>This is a paragraph.</p>
 
@@ -437,7 +437,7 @@ Example:
 <p>This is also a paragraph</p>
 ```
 - Parts in the middle of the HTML code can be hidden as well
-Example:
+- Example:
 ```html
 <p>This <!-- comment --> is in a paragraph.</p>
 ```
@@ -451,7 +451,7 @@ Example:
 
 ## Background Colour
 - Can be set using the CSS property `background-color`
-Example:
+- Example:
 ```html
 <p style="background-color: #42BC9C">This is a paragraph</p>
 ```
@@ -689,10 +689,10 @@ hsla(hue, saturation, lightness, alpha)
 - Add the `usemap` attribute
   - The value starts with a `#` followed by the name of the image map
   - It is used to create a relationship between the image and image map
-  Example:
-    ```html
-    <img src="Venti.jpg" alt="Venti" usemap="#Venti">
-    ```
+  - Example:
+  ```html
+  <img src="Venti.jpg" alt="Venti" usemap="#Venti">
+  ```
 - Then, add a `<map>` element, where it is then linked to the image with the `name` attribute (they must be the same)
   ```html
   <map name="Venti">
@@ -747,3 +747,19 @@ hsla(hue, saturation, lightness, alpha)
   - Format Support
     - Some browsers may not support all image formats
     - By using the `<picture>` element, you can add images of all formats, the browser will use the first format it recognizes, and ignore any of the following elements
+
+# Favicon
+- Favicon is a small image
+- It is displayed next to the page title in the browser tab
+- Can be added to the page by using the `<link>` element after the `<title>` element
+- Example:
+
+## Favicon File Format Support
+
+| Browser | ICO   | PNG   | GIF   | JPEG  | SVG   |
+| :-----: | :---: | :---: | :---: | :---: | :---: |
+| Edge    | Yes   | Yes   | Yes   | Yes   | Yes   |
+| Chrome  | Yes   | Yes   | Yes   | Yes   | Yes   |
+| Firefox | Yes   | Yes   | Yes   | Yes   | Yes   |
+| Opera   | Yes   | Yes   | Yes   | Yes   | Yes   |
+| Safari  | Yes   | Yes   | Yes   | Yes   | Yes   |
