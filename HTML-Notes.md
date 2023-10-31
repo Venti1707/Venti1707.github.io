@@ -125,7 +125,7 @@
   </body>
 </html>
 ```
-- Used to declare the language of the webpage
+- Used to declare the language of the web page
 - Meant to assist
   - Search engines
   - Browsers
@@ -552,7 +552,7 @@ hsla(hue, saturation, lightness, alpha)
 
 # [CSS](https://www.w3schools.com/html/html_css.asp)
 - Stands for **C**ascading **S**tyle **S**heets
-- Used to format the layout of a webpage
+- Used to format the layout of a web page
 - It is cascading as a style applied to a parent element will apply to all children elements within the parent
 
 ## Using CSS
@@ -630,10 +630,10 @@ hsla(hue, saturation, lightness, alpha)
 -  Specifies extra information about an element
 -  Most often shown as a tooltip text when the mouse hovers over said element
 
-## Link Colours
+## [Link Colours](https://www.w3schools.com/html/html_links_colors.asp)
 - Can be styled using CSS
 
-## Link Bookmarks
+## [Link Bookmarks](https://www.w3schools.com/html/html_links_bookmarks.asp)
 - Used so readers can jump to specific parts of a web page
 - Can be useful if the web page is very long
 - To create a bookmark, perform the following steps:
@@ -647,5 +647,103 @@ hsla(hue, saturation, lightness, alpha)
     ```
 - You can also add a link to a bookmark on another page
   ```html
-  <a href="another-webpage.html#example">Jump to Example on another page</a>
+  <a href="another-web page.html#example">Jump to Example on another page</a>
   ```
+
+# [Images](https://www.w3schools.com/html/html_images.asp)
+- The `<img>` tag is used to embed an image in a web page
+- It creates a holding space for the referenced image
+- It has 2 required attributes
+  - `src`
+    - Specifies the path (URL) to the image
+  - `alt`
+    - Specifies an alternate text to the image
+    - Only shown under one of the following conditions
+      - There is slow connection
+      - An error in the `src` attribute
+      - The user uses a screen reader
+- Images are not technically inserted in a web page, but instead linked to web pages
+- You can also use the `style` attribute to specify the width and height of an image
+- You can also use the `width` and `height` attributes
+- It is preferred to use the `style` attribute as it prevents CSS files from changing the size of images
+- HTML allows for animated GIFs
+- Common Image Formats
+
+| Abbreviation | File Format                           | File Extension                   |
+| :----------: | :-----------------------------------: | :------------------------------: |
+| APNG         | Animated Portable Network Graphics    | .apng                            |
+| GIF          | Graphics Interchange Format           | .gif                             |
+| ICO          | Microsoft Icon                        | .ico, .cur                       |
+| JPEG         | Joint Photographic Expert Group image | .jpg, .jpeg, .jfif, .pjpeg, .pjp |
+| PNG          | Portable Network Graphics             | .png                             |
+| SVG          | Scalable Vector Graphics              | .svg                             |
+
+## [Image Map](https://www.w3schools.com/html/html_images_imagemap.asp)
+- The `<map>` tag defines an image map
+- An image map is an image with clickable areas
+- The areas are defined with one or more `<area>` tags
+- To create one, you need an image and some HTML code that describes the clickable areas
+
+### How To Create An Image Map
+- Insert an image using the `<img>` tag
+- Add the `usemap` attribute
+  - The value starts with a `#` followed by the name of the image map
+  - It is used to create a relationship between the image and image map
+  Example:
+    ```html
+    <img src="Venti.jpg" alt="Venti" usemap="#Venti">
+    ```
+- Then, add a `<map>` element, where it is then linked to the image with the `name` attribute (they must be the same)
+  ```html
+  <map name="Venti">
+  ```
+- Then, add clickable areas by using the `<area>` element
+- To define the shape of the clickable area add the `shape` attribute with any of the following values
+  - `rect`
+    - A rectangular region
+    - The coordinates comes in pairs
+      - One for the x-axis
+      - Another for the y-axis
+    - This is then specified as a value in the `coords` attribute like this: `x1, y1, x2, y2`
+  - `circle`
+    - A circular region
+    - Locate the coordinates of the center of the circle, then specify the radius of the circle
+    - This is then specified as a value in the `coords` attribute like this: `x, y, radius`
+  - `poly`
+    - A polygonal region
+    - Contains several coordinate points
+    - Creates a shape formed with straight lines
+    - Can be used to create any shape
+    - This is then specified as the value in the `coords` attribute like this: `x1, y1, x2, y2, x3, y3 ..., xn, yn`
+  - `default`
+    - The entire region
+
+### Image Map & JavaScript
+- A clickable area can also trigger a JavaScript function
+
+## Background Images
+- Use the `style` attribute and the CSS `background-image` property and add the URL of the image file in `url`
+- To avoid the background image from repeating itself
+  - Set the `background-repeat` property to `no-repeat`
+- To cover the entire element
+  - Set the `background-size` property to `cover`
+  - Set the `background-attachment` property to `fixed`
+- To stretch the entire element
+  - Set the `background-size` property to `100% 100%`
+
+## The `<picture>` Element
+- Allows you to display different pictures for different devices or screen sizes
+- Also gives web developers more flexibility in specifying image resources
+- Contains one or more `<source>` elements
+- Each refers to different images through the `srcset` attribute
+- This way the browser can choose the image that best fits the current and/or device
+- Each `<source>` element has a `media` attribute that defines when the image is the most suitable
+- Always specify the `<img>` element as the last child element of the `<picture>` element
+- The `<img>` element is used by browsers that do not support the `<picture>` element
+- Two main reasons for using the `<picture>` element
+  - Bandwidth
+    - Having a small screen or device means it is not necessary to load a large image file
+    - The browser will use the first `<source>` element with matching attribute values and ignore any of the following elements
+  - Format Support
+    - Some browsers may not support all image formats
+    - By using the `<picture>` element, you can add images of all formats, the browser will use the first format it recognizes, and ignore any of the following elements
