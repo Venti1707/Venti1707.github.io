@@ -1,0 +1,11 @@
+#wide-venti {
+    width: 100%
+}
+
+#left-text-venti {
+    float: left;
+}
+
+#right-text-venti {
+    float: right;
+}
