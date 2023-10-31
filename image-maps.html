@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Image Maps</title>
+</head>
+
+<body>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#map">
+
+    <script>
+        function computerAlert() {
+            alert("You clicked on the computer!");
+        }
+    </script>
+
+    <map name="map">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="#" onclick="computerAlert()">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Telephone">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+</body>
+</html>
