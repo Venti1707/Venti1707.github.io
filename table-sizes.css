@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+#width-100 {
+    width: 100%;
+}
+
+#column-1-70 {
+    width: 70%;
+}
+
+#row-2-200 {
+    height: 200px;
+}
