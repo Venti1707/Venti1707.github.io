@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(66, 189, 156, 0.4);
+}
+
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(112, 66, 219, 0.4);
+}
