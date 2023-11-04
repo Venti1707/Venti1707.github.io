@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+#left-align-header {
+    text-align: left;
+}
+
+#multiple-column-header {
+    colspan: 2;
+}
