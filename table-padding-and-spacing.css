@@ -1,0 +1,27 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+#th-padding, #td-padding {
+    padding: 15px;
+}
+
+#td-padding-top {
+    padding-top: 15px;
+}
+
+#td-padding-bottom {
+    padding-bottom: 15px;
+}
+
+#td-padding-left {
+    padding-left: 15px;
+}
+
+#td-padding-right {
+    padding-left: 15px;
+}
+
+#spacing {
+    border-spacing: 30px;
+}
