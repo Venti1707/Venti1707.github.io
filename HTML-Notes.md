@@ -763,3 +763,140 @@ hsla(hue, saturation, lightness, alpha)
 | Firefox | Yes   | Yes   | Yes   | Yes   | Yes   |
 | Opera   | Yes   | Yes   | Yes   | Yes   | Yes   |
 | Safari  | Yes   | Yes   | Yes   | Yes   | Yes   |
+
+# [Tables](https://www.w3schools.com/html/html_tables.asp)
+- Allows web developers to arrange data into rows and columns
+- To make a HTML table, follow these steps
+  - Start with a `<table>` element
+  - Add a header with the `<th>` element
+    - `th` stands for **t**able **h**eader
+  - Add rows with the `<tr>` element
+    - `tr` stands for **t**able **r**ow
+    - You can have as many rows as you like in a table
+    - Make sure that the number of cells are the same in each row
+  - Add content with the `<td>` element
+    - `td` standsfor **t**able **d**ata
+- You can add more to a table with these elements
+  - A caption with the `<caption>` element
+    - It should be inserted immediately after the `<table>` element
+  - A group of 1 or more columns (as a container of sorts) with the `<colgroup>` element
+  - Column properties for each column within a `<colgroup>` element with the `<col>` element
+    - The `span` attribute specifies how many columns get the style
+    - The `style` attribute specifies the style to give the column
+      - You can only use these CSS properties
+        - [width](https://www.w3schools.com/cssref/pr_dim_width.php)
+        - [visibility](https://www.w3schools.com/cssref/pr_class_visibility.php)
+        - [background](https://www.w3schools.com/cssref/css3_pr_background.php)
+        - [border](https://www.w3schools.com/cssref/pr_border.php)
+  - Group the header content in a table with a `<thead>`
+  - Group the body content in a table with a `<tbody>`
+  - Group the footer content in a table with a `<tfoot>`
+
+## [Table Borders](https://www.w3schools.com/html/html_table_borders.asp)
+- To add a border, use the CSS `border` property on `table`, `th` and `td` elements
+- Simple border example:
+```css
+table, th, td {
+  border: 1px solid black;
+}
+```
+
+- Collapsed border example:
+```css
+table, th, td{
+  border-collapse: collapse;
+}
+```
+
+- Invisible border example:
+```css
+table, th, td {
+  border: 1px solid /* Colour of the background */;
+  border-collapse: collapse;
+}
+
+th, td {
+  background-color: /* Any colour */;
+}
+```
+
+- Round border example:
+```css
+table, th, td { /* You can skip the border around the table by leaving out the table */
+  border: 1px solid black;
+  border-radius: 10px;
+}
+```
+
+- Other border styles example:
+```css
+th, td {
+  border-style: /* One of the following: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */;
+}
+```
+
+## [Table Sizes](https://www.w3schools.com/html/html_table_sizes.asp)
+- Use the `style` attribute with the `width` and `height` properties to specify the size of
+  - A table
+  - A row
+  - A column
+- Using a percentage as the size unit for a width means how wide the element will be compared to the parent element
+- To set the size of a specific column, add the `style` attribute on a `<th>` or `<td>` element
+
+## [Table Headers](https://www.w3schools.com/html/html_table_headers.asp)
+- Define the first cell in each row as a `<th>` element
+- To align the table headers, use the CSS `text-align` element on the `<th>` element
+- To have a header that spans over 2 or more columns, use the `colspan` attribute on the `<th>` element
+
+## [Padding & Spacing](https://www.w3schools.com/html/html_table_padding_spacing.asp)
+- Cell padding is the space between the edges and the cell content
+- The default padding is set to 0
+- To add padding, use the CSS `padding` property
+- To add padding to a certain direction relative to the content, use one of the following properties
+  - Above the content: `padding-top`
+  - Below the content: `padding-bottom`
+  - To the left of the content: `padding-left`
+  - To the right of the content: `padding-right`
+- Cell spacing is the space between each cell
+- The default space is set to 2 pixels
+
+## [Colspan & Rowspan](https://www.w3schools.com/html/html_table_colspan_rowspan.asp)
+- HTML tables can have cells that span over multiple rows and/or columns
+
+## [Table Styling](https://www.w3schools.com/html/html_table_styling.asp)
+- To add horizontal stripes on every even/odd table row, use the `:nth-child()` selector like this
+```css
+tr:nth-child(even) { /* This is for every row number that is even */
+  background-color: /* Any colour */
+}
+
+tr:nth-child(odd) { /* This is for every row number that is odd */
+  background-color: /* Any colour */
+}
+```
+- To add vertical stripes on every even/odd table column, use the `:nth-child()` selector like this
+```css
+td:nth-child(even), th:nth-child(even) { /* This is for every column number that is even */
+  background-color: /* Any colour */;
+}
+
+td:nth-child(odd), th:nth-child(odd) { /* This is for every column number that is odd */
+  background-color: /* Any colour */;
+}
+```
+- To combine both to get stripes on every even row, use the `:nth-child()` selector like this
+```css
+tr:nth-child(even) {
+  background-color: /* Any colour */;
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: /* Any colour */;
+}
+```
+- To get horizontal stripes, add the `:hover` selector to all `tr` elements like this
+```css
+tr:hover {
+  background-color: /* Any colour */;
+}
+```
