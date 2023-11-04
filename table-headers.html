@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Table Headers</title>
+    <link rel="stylesheet" href="table-headers.css">
+</head>
+
+<body>
+    <table id="vertical-headers">
+        <caption>Vertical Headers</caption>
+        <colgroup>
+            <col span="1" style="background-color: #42BC9C">
+            <col span="5" style="background-color: #7042DB">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <td>Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 1, Row 2 (Body)</td>
+                <td>Data in Header 1, Row 3 (Body)</td>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+                <td>Data in Header 1, Row 5 (Footer)</td>
+            </tr>
+            <tr>
+                <th>Header 2</th>
+                <td>Data in Header 2, Row 1 (Body)</td>
+                <td>Data in Header 2, Row 2 (Body)</td>
+                <td>Data in Header 2, Row 3 (Body)</td>
+                <td>Data in Header 2, Row 4 (Footer)</td>
+                <td>Data in Header 2, Row 5 (Footer)</td>
+            </tr>
+        </thead>
+    </table>
+
+    <hr>
+
+    <table id="left-align-header-table">
+        <caption>Left Aligned Table Headers</caption>
+        <colgroup>
+            <col span="1" style="background-color: #42BC9C">
+            <col span="1" style="background-color: #7042DB">
+        </colgroup>
+        <thead>
+            <tr id="left-align-header">
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 2, Row 1 (Body)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 2 (Body)</td>
+                <td>Data in Header 2, Row 2 (Body)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+                <td>Data in Header 2, Row 3 (Footer)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+                <td>Data in Header 2, Row 4 (Footer)</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <table id="header-for-multiple-columns-table">
+        <caption>Table Headers For Multiple Columns</caption>
+        <colgroup>
+            <col span="1" style="background-color: #42BC9C">
+            <col span="2" style="background-color: #7042DB">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th id="multiple-column-header" colspan="2">Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 2, Row 1 (Body)</td>
+                <td>Data in Header 2, Row 1 (Body)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 2 (Body)</td>
+                <td>Data in Header 2, Row 2 (Body)</td>
+                <td>Data in Header 2, Row 2 (Body)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+                <td>Data in Header 2, Row 3 (Footer)</td>
+                <td>Data in Header 2, Row 3 (Footer)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+                <td>Data in Header 2, Row 4 (Footer)</td>
+                <td>Data in Header 2, Row 4 (Footer)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
