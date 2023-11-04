@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Colspan & Rowspan</title>
+    <link rel="stylesheet" href="colspan-and-rowspan.css">
+</head>
+
+<body>
+    <table id="colspan-table">
+        <caption>Colspan Table</caption>
+        <colgroup>
+            <col span="2" style="background-color: #42BC9C">
+            <col span="1" style="background-color: #7042DB">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 2, Row 1 (Body)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 2 (Body)</td>
+                <td>Data in Header 1, Row 2 (Body)</td>
+                <td>Data in Header 2, Row 2 (Body)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+                <td>Data in Header 2, Row 3 (Footer)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+                <td>Data in Header 2, Row 4 (Footer)</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <table id="rowspan-table">
+        <caption>Rowspan Table</caption>
+        <colgroup>
+            <col span="1" style="background-color: #42BC9C">
+            <col span="1" style="background-color: #7042DB">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Data in Header 1, Row 1 (Body)</td>
+                <td>Data in Header 1, Row 1 (Body)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 2 (Body)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Data in Header 1, Row 2 (Footer)</td>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+            </tr>
+            <tr>
+                <td>Data in Header 1, Row 3 (Footer)</td>
+                <td>Data in Header 1, Row 4 (Footer)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
