@@ -900,3 +900,37 @@ tr:hover {
   background-color: /* Any colour */;
 }
 ```
+
+# [Lists](https://www.w3schools.com/html/html_lists.asp)
+- Lists allow web developers to group a set of related items in lists
+- Unordered lists start with the `<ul>` tag
+- Ordered lists start with the `<ol>` tag
+- Each list item starts with the `<li>` tag
+- HTML also supports description lists
+- Description lists is a list of terms, with a description of each term.
+- The `<dl>` tag defines the description list
+- The `<dt>` tag defines the tag name
+- The `<dd>` tag describes each term
+
+## [Unordered Lists](https://www.w3schools.com/html/html_lists_unordered.asp)
+- The CSS `list-style-property` is used to define the style of the list item marker
+- It can have one of the following values
+  - `disc` (This is the default value)
+  - `circle`
+  - `square`
+  - `none`
+  - More can be seen [here](https://www.w3schools.com/cssref/pr_list-style-type.php)
+
+## [Ordered Lists](https://www.w3schools.com/html/html_lists_ordered.asp)
+- The `type` attribute of the `<ol>` tag is used to define the type of the list item marker
+- It can have one of the following values
+  - `type="1"` (The is the default value)
+    - The list items will be numbered with numbers (default)
+  - `type="A"`
+    - The list items will be numbered with uppercase letters
+  - `type="a"`
+    - The list items will be numbered with lowercase letters
+  - `type="I"`
+    - The list items will be numbered with uppercase roman numbers
+  - `type="i"`
+    - The list items will be numbered with lowercase roman numbers
